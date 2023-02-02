@@ -19,7 +19,7 @@ env:
   # github.repository as <account>/<repo>
   DOCKERHUB_USER: sxing12138
   REPO_NAME: caddy-cloudflare
-  IMAGE_NAME: ${{DOCKERHUB_USER}}/${{REPO_NAME}}
+  IMAGE_NAME: ${{ env.DOCKERHUB_USER }}/${{ env.REPO_NAME }}
 
 jobs:
   build:
