@@ -17,8 +17,9 @@ env:
   # Use docker.io for Docker Hub if empty
   REGISTRY: docker.io
   # github.repository as <account>/<repo>
-  IMAGE_NAME: ${{ github.repository }}
-
+  DOCKERHUB_USER: sxing12138
+  REPO_NAME: caddy-cloudflare
+  IMAGE_NAME: ${{DOCKERHUB_USER}}/${{REPO_NAME}}
 
 jobs:
   build:
